@@ -14,10 +14,9 @@ public class HelloTabWidget extends TabActivity {
 		Resources res = getResources();
 		TabHost tabHost = getTabHost();
 		TabHost.TabSpec spec;
-		Intent intent; 
-		
+		Intent intent;
+				
 		intent = new Intent().setClass(this, ArtistsActivity.class);
-		
 		spec = tabHost.newTabSpec("artists").setIndicator("Artists",
 					res.getDrawable(R.drawable.ic_tab_artists))
 				.setContent(intent);
